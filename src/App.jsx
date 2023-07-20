@@ -40,7 +40,8 @@ function App() {
 
   return (
     <div className="App">
-      <input type="text" value={ingredients} onChange={handleInputChange} />
+      <h1 className='title'>FoodieInfos</h1>
+      <input type="text" placeholder='Apple...' value={ingredients} onChange={handleInputChange} />
       <button onClick={handleSubmit}>Submit</button>
       {isLoading ? (
         <p>Generating Dishes with {ingredients} . . .</p>
